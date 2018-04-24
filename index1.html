@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>JavaScript</title>
+</head>
+
+    <body>
+        <table>
+            <tr>
+                <th>First Number</th>
+                <td><input type="number" id="firstNumber"/></td>
+            </tr>
+            <tr>
+                <th>Second Number</th>
+                <td><input type="number" id="secondNumber"/></td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td><input type="text" id="result"/></td>
+            </tr>
+
+            <tr>
+            <th></th>
+            <td>
+                <input type="button" id="addition" value="+" onclick="sum()">
+                <input type="button" id="subtraction" value="-" onclick="minus()">
+                <input type="button" id="multiplication" value="*">
+                <input type="button" id="division" value="/">
+                <input type="button" id="reminder" value="%">
+            </td>
+            </tr>
+
+
+            <script>
+//                Funcition for sum
+        function sum(){
+            var firstNumber = document.getElementById('firstNumber').value;  /*First value*/
+            var secondNumber = document.getElementById('secondNumber').value; /*Seconf value*/
+            var twonumbersum = Number(firstNumber) + Number (secondNumber); /*sum of 2 values*/
+            document.getElementById('result').value = twonumbersum;   /*get the value in result*/
+        }
+
+//                Funcition for minus          
+                
+        function minus(){
+            var firstNumber = document.getElementById('firstNumber').value;
+            var secondNumber = document.getElementById('secondNumber').value;
+            var twonumberminus = Number(firstNumber) - Number (secondNumber);
+            document.getElementById('result').value = twonumberminus;
+        }
+            
+                
+            </script>
+
+
+
+    </body>
+
+
+
+
+</html>
